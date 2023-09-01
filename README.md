@@ -1,2 +1,4 @@
-# odin-recipes
-This project consists of links to some recipes
+# MERN Stack - Tasks
+This project consists of links to tasks
+KEVIN SEBASTIAN
+21BCE1177

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            background-color: rgb(151, 63, 78);
+        }
+        .container{
+            margin: auto;
+            margin-top: 50px;
+            width: 50%;
+            min-width: 400px;
+            padding: 50px;
+            color: white;
+            background-color: rgb(126, 56, 67);
+        }
+        table{
+            margin: auto;
+            width: 50%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .input-label{
+            display: inline-block ;
+            text-align: left;
+            box-sizing: border-box;
+            width: 120px;
+            padding: 5px;
+        }
+        .input-field{
+            display: inline-block;
+            width: 250px;
+            box-sizing: border-box;
+            padding: 1px;
+            margin: 5px;
+        }
+        button{
+            width: 99%;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+            color: rgb(137, 26, 45);
+            font-weight: bold;
+        }
+        button:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="get">
+          <table>
+            <tr>
+              <td><label class="input-label" for="name">Name:</label></td>
+              <td><input class="input-field" type="text" name="name" id="name" placeholder="your name"></td>
+            </tr>
+            <tr>
+              <td><label class="input-label" for="email">Email:</label></td>
+              <td><input class="input-field" type="text" name="email" id="email" placeholder="your email"></td>
+            </tr>
+            <tr>
+              <td><label class="input-label" for="password">Password:</label></td>
+              <td><input class="input-field" type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+              <td><label class="input-label" for="phoneNumber">Phone Number:</label></td>
+              <td><input class="input-field" type="number" name="phoneNumber" id="phoneNumber"></td>
+            </tr>
+            <tr>
+              <td><label class="input-label" for="gender">Gender:</label></td>
+              <td class="input-field" >Male: <input type="radio" name="gender" value="male">
+                Female: <input type="radio" name="gender" value="female">
+                Other: <input type="radio" name="gender" value="other">
+              </td>
+            </tr>
+            <tr>
+              <td><label class="input-label" for="language">language</label></td>
+              <td>
+                <select class="input-field" name="language" id="language">
+                  <option value="">Select language</option>
+                  <option value="English">English</option>
+                  <option value="Spanish">Spanish</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Arabic">Arabic</option>
+                  <option value="Russian">Russian</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label class="input-label" for="zipcode">Zip Code:</label></td>
+              <td><input class="input-field" type="number" name="zipcode" id="zipcode"></td>
+            </tr>
+            <tr>
+              <td><label class="input-label" for="about">About:</label></td>
+              <td><textarea class="input-field" name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button type="submit">Register</button></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+</body>
+</html>
+
+
+
+
+

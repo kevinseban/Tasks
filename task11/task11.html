@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:small;
+        }
+        .outer-container{
+            margin: auto;
+            width: 50%;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .inner-container{
+            padding: 10px;
+            padding-bottom: 0px;
+            background-color: white;
+        }
+        label[for=username],label[for=password]{
+            font-weight: bold;
+        }
+        .image{
+            text-align: center;
+            background-color: white;
+        }
+        img{
+            height: 40%;
+            width: 40%;
+            border-radius: 50%;
+        }
+        .login{
+            width: 100%;
+            background-color: white;
+            padding-bottom: 5px;
+        }
+        input[type=text],input[type=password]{
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 8px 12px;
+            box-sizing: border-box;
+        }
+        #login-btn{
+            background-color: rgb(52, 209, 52);
+            width: 100%;
+            height: 25px;
+            color: white;
+            border: none;
+            margin-bottom: 5px;
+        }
+        .lower{
+            padding: 10px;
+        }
+        #cancel-btn{
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            color: white;
+        }
+        #forgot{
+            padding-top: 5px;
+            float: right;
+        }
+        #forgot a{
+            color: black;
+        }
+        button:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="image">
+                <img src="./profile.png">
+            </div>
+            <div class="login">
+                <form method="get">
+                    <label for="username">Username</label><br>
+                    <input type="text" placeholder="Enter username"><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" placeholder="Enter password"><br>
+                    <button type="submit" id="login-btn">Login</button><br>
+                    <label><input type="checkbox" checked >Remember Me</label>
+                </form>
+            </div>
+        </div>
+        <div class="lower">
+            <button id="cancel-btn">Cancel</button><span id="forgot">Forgot <a href="#">Password?</a></span>
+        </div>
+    </div>
+</body>
+</html>
